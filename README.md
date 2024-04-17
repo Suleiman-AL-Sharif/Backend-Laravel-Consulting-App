@@ -1,66 +1,37 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+AAK Consulting App ..
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Created By Suleiman-AL-Sharif at 19/1/2023.
 
-## About Laravel
+توصيف التطبيق (عربي):
+هو عبارة عن تطبيق موبايل/ويب مكتوب بلغة Flutter، هو تطبيق أستشارات يحوي على نوعين من المستخدمين عميل (User) و خبير (Expert) ، كل منهما له ميزاته الخاصَّة. يبدأ التطبيق من splash screen خاصَّة بالتطبيق.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+يقوم المستخدم بداية بإنشاء حساب عميل/خبير عبر واجهة ال sgin up ثمَّ يقوم بتسجيل الدخول ك عميل/خبير وفي هذه الواجهة تتم عمليَّات authentication & authorization.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ينتقل بعدها الى الشاشة الرئيسيَّة التي تحتوي على تصنيفات الخبراء، وزر تسجيل الخروج بالإضافة إلى زر إضافة خبير والذي لا يظهر الا اذا قمت بتسجيل الدخول كخبير، وأيضاً تحوي TapBar و Drwaer.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+زر إضافة الخبير يتيح للخبير إدخال تفاصيل خدماته: الاسم ، تصنيف الخبرة (علمي، نفسي، رياضي ...) بواسطة DropButton، وإدخال تفاصيل الخدمة التي يقدمها، وكلفة الخدمة. بالإضافة االى قدرته على تحديد مواعيد دوامه الأيام والساعات باستخدام MultiSelect، ويستطيع أيضاً إضافة صورته وإلا تأخذ قيمة أفتراضيَّة حاصَّة بكل تصنيف.
 
-## Learning Laravel
+عند أختيار تصنيف ما تظهر للمستخدم لائحة الخبراء ضمن هذا التصنيف وتفاصيل عامَّة عنهم كسعر الخدمة والاسم والصورة بواسطة Card. عند الضغط على خبير تظهر الشاشة المخصصة له فيها كافَّة تفاصيله بالإضافة إلى وجود زرين أحدهم لإضافة الى المفضلة لضمان سهولة الوصول له والآخر لحجز موعد ضمن المواعيد المتاحة. عندما يختار المستخدم حجز موعد يظهر له الأيام المتاحة وعند اختيار اليوم تظهر له الساعات المتاحة مقسمة على نصف ساعة وفي حال كان الوقت محجوز مسبقاُ من شخص آخر لا يظهر ضمن القائمة.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+في الشاشة الرئيسية في حال سجلت الدخول كخبير يظهر لك في ال SideBar المواعيد التي تم حجزها لمعرفة جدول مهامك ومواعيدك.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+هذا التطبيق قابل للتطوير أكثر وإضافة الكثير من الميزات عليه ولكن لم يتم ذلك لضيق الوقت المخصص له.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+مع جزيل الشكر للقراءة :-) ..
 
-## Laravel Sponsors
+App Description (English):
+It is a mobile/web application, It is a consulting application that contains two types of users: a client and an expert, each of which has its own features. The application starts from an application-specific splash screen.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+The user first creates a client/expert account via the sgin up interface, then logs in as a client/expert, and authentication & authorization processes take place in this interface.
 
-### Premium Partners
+It then moves to the main screen, which contains the expert category,the logout button, in addition to the Add Expert button, which does not appear unless you log in as an expert, and it also contains the TapBar and Drwaer.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+The Add Expert button allows the expert to enter the details of his services: name, category of expertise (scientific, psychological, mathematical...) via DropButton, and enter the details of the service he provides, and the cost of the service. In addition to his ability to set work schedules, days and hours using MultiSelect, he can also add his picture, otherwise it takes a default value unique to each classification.
 
-## Contributing
+When choosing a category, the user appears with a list of experts within this category and general details about them, such as the price of the service, name, and photo using the card. When you click on an expert, the screen assigned to him appears, containing all his details, in addition to the presence of two buttons, one to add to favorites to ensure easy access to him, and the other to book an appointment within the available appointments. When the user chooses to book an appointment, the available days are shown to him, and when he chooses the day, the available hours are shown to him, divided into half an hour. If the time is already reserved by someone else, it does not appear on the list.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+On the main screen, if you are logged in as an expert, the SideBar will show you the appointments that have been booked to know your schedule of tasks and appointments.
 
-## Code of Conduct
+This application can be further developed and many features added to it, but this was not done due to the limited time allocated for it.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Tanks For Reading :-) ..
